@@ -51,7 +51,7 @@ Alternatively, you could install the workshop using the commands below in R `>4.
 install.packages('remotes')
 
 # Install workshop package
-remotes::install_github("bhuvad/XeniumSpatialAnalysisWorkshop", build_vignettes = TRUE)
+remotes::install_github("BhuvaLab/XeniumSpatialAnalysisWorkshop", build_vignettes = TRUE)
 
 # To view vignettes
 library(XeniumSpatialAnalysisWorkshop)

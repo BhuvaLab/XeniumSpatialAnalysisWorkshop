@@ -1,4 +1,4 @@
-url: https://github.com/bhuvad/XeniumSpatialAnalysisWorkshop
+url: https://github.com/BhuvaLab/XeniumSpatialAnalysisWorkshop
 
 template:
   params:
@@ -13,6 +13,6 @@ home:
 navbar:
   right:
    - icon: fa-github
-     href: https://github.com/bhuvad/XeniumSpatialAnalysisWorkshop
+     href: https://github.com/BhuvaLab/XeniumSpatialAnalysisWorkshop
 
 

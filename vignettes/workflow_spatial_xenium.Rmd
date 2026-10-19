@@ -84,7 +84,7 @@ We will use the already segmented cell-level count data. We will also use a prev
 
 The data we will use in this workshop is from the 10x Xenium platform. Since the objective of this workshop is to introduce you to spatial transcriptomics analysis, we do not work with the full dataset, which contains over 500,000 cells and instead opt to work with a smaller subset of the sample. This region contains interesting features and is therefore enough to showcase a complete spatial transcriptomics analysis workflow. The data used in this workshop is a window with the x coordinate in the interval (4800, 5800) and the y coordinate in the interval (8500, 9500). This window is shown in the context of the full tissue below.
 
-![Full IDC](https://raw.githubusercontent.com/bhuvad/XeniumSpatialAnalysisWorkshop/refs/heads/main/inst/extdata/full_tissue.png)
+![Full IDC](https://raw.githubusercontent.com/BhuvaLab/XeniumSpatialAnalysisWorkshop/refs/heads/main/inst/extdata/full_tissue.png)
 
 ```{r}
 library(SpatialExperiment)
@@ -315,7 +315,7 @@ To remove these library size biases, we perform library size normalisation. As m
 
 In both cases, each cell cannot be normalised independently as nearby cells are likely to experience similar technical effects. To tackle this, our team has developed the SpaNorm normalisation method that uses spatial dependence to decouple technical and biological effects [@salim2024spanorm]. SpaNorm uses a spatially constrained regularised generalised linear model to model library size effects and subsequently adjust the data.
 
-![SpaNorm schematic](https://raw.githubusercontent.com/bhuvad/SpaNorm/refs/heads/master/vignettes/SpaNormWorkflow.png)
+![SpaNorm schematic](https://raw.githubusercontent.com/BhuvaLab/SpaNorm/refs/heads/master/vignettes/SpaNormWorkflow.png)
 
 The key parameters for SpaNorm normalisation that need to be adjusted are:
 
